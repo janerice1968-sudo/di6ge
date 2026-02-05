@@ -3,44 +3,60 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white py-20 border-t border-lumina-charcoal/5">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer className="bg-white pt-32 pb-16 border-t border-zinc-50">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-20 mb-32">
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-6 h-6 bg-red-950 rounded-full"></div>
-              <span className="font-serif text-xl tracking-tight font-bold uppercase">LATE NIGHTS VIBE</span>
+            <div className="flex items-center space-x-3 mb-10">
+              <div className="w-12 h-12 bg-rose-600 rounded-xl flex items-center justify-center shadow-xl shadow-rose-100">
+                <span className="text-white font-serif font-bold italic text-2xl">a</span>
+              </div>
+              <span className="text-2xl font-serif font-bold tracking-tighter lowercase italic text-zinc-900">ardour-life</span>
             </div>
-            <p className="text-lumina-muted max-w-sm leading-relaxed mb-8">
-              A midnight sanctuary designed for those seeking deep interaction and authentic sensory experiences. At the intersection of thought and desire, we await your presence.
+            <p className="text-zinc-500 max-w-sm mb-10 text-lg leading-relaxed font-medium">
+              Elevating intimacy through high-fashion design, uncompromising privacy, and elite verification. The premium club for curated digital connections.
             </p>
+            <div className="flex space-x-8">
+              <a href="#" className="text-zinc-300 hover:text-rose-600 transition-colors">
+                <span className="sr-only">Twitter</span>
+                <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+              </a>
+              <a href="#" className="text-zinc-300 hover:text-rose-600 transition-colors">
+                <span className="sr-only">Instagram</span>
+                <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.981 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+            </div>
           </div>
 
           <div>
-            <h4 className="text-[11px] tracking-[0.4em] uppercase text-red-900 font-bold mb-6">Navigation</h4>
-            <ul className="space-y-4 text-sm text-lumina-charcoal/70">
-              <li><button onClick={() => document.getElementById('home')?.scrollIntoView({behavior:'smooth'})} className="hover:text-red-900 transition-colors">Entrance</button></li>
-              <li><button onClick={() => document.getElementById('philosophy')?.scrollIntoView({behavior:'smooth'})} className="hover:text-red-900 transition-colors">Midnight Rhythm</button></li>
-              <li><button onClick={() => document.getElementById('gallery')?.scrollIntoView({behavior:'smooth'})} className="hover:text-red-900 transition-colors">Secret Archives</button></li>
-              <li><button onClick={() => document.getElementById('experience')?.scrollIntoView({behavior:'smooth'})} className="hover:text-red-900 transition-colors">Sensory Encounter</button></li>
+            <h4 className="text-zinc-900 font-black mb-10 uppercase tracking-[0.2em] text-[11px]">Experience</h4>
+            <ul className="space-y-6 text-zinc-400 text-xs font-bold tracking-widest uppercase">
+              <li><a href="#" className="hover:text-rose-600 transition-colors">Live Studios</a></li>
+              <li><a href="#" className="hover:text-rose-600 transition-colors">Private Search</a></li>
+              <li><a href="#" className="hover:text-rose-600 transition-colors">Elite Tiers</a></li>
+              <li><a href="#" className="hover:text-rose-600 transition-colors">Compliance</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-[11px] tracking-[0.4em] uppercase text-red-900 font-bold mb-6">Contact</h4>
-            <ul className="space-y-4 text-sm text-lumina-charcoal/70">
-              <li>concierge@latenights.vibe</li>
-              <li>Tokyo • Paris • Bangkok</li>
-              <li>@latenightsvibe.official</li>
+            <h4 className="text-zinc-900 font-black mb-10 uppercase tracking-[0.2em] text-[11px]">The House</h4>
+            <ul className="space-y-6 text-zinc-400 text-xs font-bold tracking-widest uppercase">
+              <li><a href="#" className="hover:text-rose-600 transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-rose-600 transition-colors">Creator Program</a></li>
+              <li><a href="#" className="hover:text-rose-600 transition-colors">Privacy Circle</a></li>
+              <li><a href="#" className="hover:text-rose-600 transition-colors">Support</a></li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-20 pt-10 border-t border-lumina-charcoal/5 flex flex-col md:row items-center justify-between space-y-4 md:space-y-0 text-[10px] tracking-[0.2em] uppercase text-lumina-muted">
-          <p>© {new Date().getFullYear()} Late Nights Vibe. All Rights Reserved.</p>
-          <div className="flex space-x-8">
-            <span className="hover:text-lumina-charcoal cursor-pointer transition-colors">Privacy Policy</span>
-            <span className="hover:text-lumina-charcoal cursor-pointer transition-colors">Terms of Service</span>
+        <div className="pt-16 border-t border-zinc-50 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+          <div className="flex items-center space-x-4">
+            <span className="text-[10px] text-zinc-300 font-black uppercase tracking-[0.3em]">&copy; 2025 ARDOUR-LIFE MEDIA. ALL RIGHTS RESERVED.</span>
+          </div>
+          <div className="flex space-x-12 text-[10px] text-zinc-300 font-black uppercase tracking-[0.3em]">
+            <a href="#" className="hover:text-zinc-900 transition-colors">Terms</a>
+            <a href="#" className="hover:text-zinc-900 transition-colors">Privacy</a>
+            <a href="#" className="hover:text-zinc-900 transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>

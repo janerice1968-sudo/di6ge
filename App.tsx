@@ -1,50 +1,40 @@
 
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Hero from './components/Hero';
-import Philosophy from './components/Philosophy';
-import Gallery from './components/Gallery';
-import Experience from './components/Experience';
+import LiveGrid from './components/LiveGrid';
+import Features from './components/Features';
+import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-import { NavigationSection } from './types';
+import AgeVerification from './components/AgeVerification';
 
 const App: React.FC = () => {
-  const [activeSection, setActiveSection] = useState<NavigationSection>(NavigationSection.Home);
+  const [isVerified, setIsVerified] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['home', 'philosophy', 'gallery', 'experience'];
-      const current = sections.find(section => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top >= -100 && rect.top <= 400;
-        }
-        return false;
-      });
-      if (current) setActiveSection(current as NavigationSection);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const verified = localStorage.getItem('velvet_age_verified');
+    if (verified === 'true') {
+      setIsVerified(true);
+    }
   }, []);
 
+  const handleVerify = () => {
+    localStorage.setItem('velvet_age_verified', 'true');
+    setIsVerified(true);
+  };
+
+  if (!isVerified) {
+    return <AgeVerification onVerify={handleVerify} />;
+  }
+
   return (
-    <div className="min-h-screen font-sans selection:bg-lumina-gold/30">
-      <Navbar activeSection={activeSection} />
+    <div className="min-h-screen selection:bg-rose-500 selection:text-white">
+      <Header />
       <main>
-        <section id="home">
-          <Hero />
-        </section>
-        <section id="philosophy">
-          <Philosophy />
-        </section>
-        <section id="gallery">
-          <Gallery />
-        </section>
-        <section id="experience">
-          <Experience />
-        </section>
+        <Hero />
+        <LiveGrid />
+        <Features />
+        <Testimonials />
       </main>
       <Footer />
     </div>

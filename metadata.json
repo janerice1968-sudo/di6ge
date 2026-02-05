@@ -1,8 +1,5 @@
 {
-  "name": "Late Nights Vibe | Premium Private Sanctuary",
-  "description": "A digital sanctuary crafted for those seeking ultimate sensory experiences, providing high-definition private interactions and unrestricted artistic live streams.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
+  "name": "Velvet - Premium Adult Social & Live",
+  "description": "A high-end, sophisticated landing page for an exclusive adult dating and live streaming platform, featuring a midnight-luxury aesthetic and modern React components.",
+  "requestFramePermissions": []
 }

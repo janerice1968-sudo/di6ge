@@ -1,20 +1,19 @@
 
-export interface InspirationResult {
-  title: string;
-  description: string;
-  elements: string[];
-}
-
-export interface GalleryItem {
+export interface Model {
   id: string;
-  url: string;
-  title: string;
+  name: string;
+  age: number;
+  location: string;
+  imageUrl: string;
+  isLive: boolean;
   category: string;
+  viewers?: number;
 }
 
-export enum NavigationSection {
-  Home = 'home',
-  Philosophy = 'philosophy',
-  Gallery = 'gallery',
-  Experience = 'experience'
+export interface Testimonial {
+  id: string;
+  user: string;
+  role: string;
+  content: string;
+  avatar: string;
 }
