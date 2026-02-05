@@ -4,8 +4,8 @@ import React from 'react';
 const Features: React.FC = () => {
   const features = [
     {
-      title: "Encrypted Privacy",
-      description: "Military-grade encryption for all private sessions and communications. Your identity remains an enigma.",
+      title: "Silent Discretion",
+      description: "Complete anonymity for your most private desires. Your path into the club remains strictly between us.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-rose-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 00-2 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -13,8 +13,8 @@ const Features: React.FC = () => {
       )
     },
     {
-      title: "Club Verification",
-      description: "We host a circle of verified elites. Every member profile is authenticated to maintain our high standards.",
+      title: "Verified Authenticity",
+      description: "We verify every profile to ensure your encounters are genuine. Only the elite grace our private chambers.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-rose-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -22,8 +22,8 @@ const Features: React.FC = () => {
       )
     },
     {
-      title: "Cinematic Quality",
-      description: "Low-latency 4K streaming that makes every frame feel like high-end editorial photography.",
+      title: "Sensory Mastery",
+      description: "Experience interactions in stunning clarity. Every breath, every motion, captured for your absolute pleasure.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-rose-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -38,10 +38,10 @@ const Features: React.FC = () => {
       
       <div className="container mx-auto px-6">
         <div className="text-center mb-32">
-          <h2 className="text-rose-600 font-bold tracking-[0.4em] uppercase mb-6 text-xs">Standard of Excellence</h2>
-          <h3 className="text-6xl md:text-8xl font-serif text-zinc-900 italic mb-10 tracking-tighter">The ardour-life Ethos</h3>
+          <h2 className="text-rose-600 font-bold tracking-[0.4em] uppercase mb-6 text-xs">Standard of Intimacy</h2>
+          <h3 className="text-6xl md:text-8xl font-serif text-zinc-900 italic mb-10 tracking-tighter">The Secret Ethos</h3>
           <p className="text-zinc-500 max-w-2xl mx-auto text-xl font-medium leading-relaxed">
-            We are redefining the landscape of digital intimacy. Every feature is crafted to provide a safe, luxurious, and deeply personal environment.
+            Redefining the landscape of personal connection. A sanctuary where your deepest fantasies are nurtured in luxury.
           </p>
         </div>
 

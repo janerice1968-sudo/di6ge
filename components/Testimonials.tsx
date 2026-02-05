@@ -5,21 +5,21 @@ const Testimonials: React.FC = () => {
   const reviews = [
     {
       user: "Michael R.",
-      role: "Club Member",
-      content: "The level of sophistication on ardour-life is unmatched. I've met fascinating people who value privacy as much as I do.",
-      avatar: "https://picsum.photos/id/64/100/100"
+      role: "Verified Guest",
+      content: "The level of sophistication here is breathtaking. I've encountered souls who cherish depth and discretion above all else.",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop"
     },
     {
       user: "Sarah J.",
       role: "Verified Creator",
-      content: "As a creator, the platform's focus on high-end aesthetics and an elite audience makes it my only home.",
-      avatar: "https://picsum.photos/id/129/100/100"
+      content: "As a creator, this sanctuary's focus on aesthetics and a distinguished audience makes it my true home.",
+      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop"
     },
     {
       user: "David W.",
-      role: "Gold Member",
-      content: "The 4K streaming quality is surreal. No lag, just crystal clear interaction that feels incredibly personal.",
-      avatar: "https://picsum.photos/id/91/100/100"
+      role: "Elite Profile",
+      content: "The visual clarity is surreal. No lag, just crystal clear interaction that feels incredibly personal and profound.",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
     }
   ];
 
@@ -28,10 +28,10 @@ const Testimonials: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-24">
           <div className="w-full lg:w-1/3">
-            <h2 className="text-rose-600 font-bold tracking-[0.4em] uppercase mb-6 text-xs text-center lg:text-left">Club Voice</h2>
-            <h3 className="text-5xl md:text-7xl font-serif text-zinc-900 mb-10 italic text-center lg:text-left tracking-tighter leading-none">The <br />Experience</h3>
+            <h2 className="text-rose-600 font-bold tracking-[0.4em] uppercase mb-6 text-xs text-center lg:text-left">Shared Secrets</h2>
+            <h3 className="text-5xl md:text-7xl font-serif text-zinc-900 mb-10 italic text-center lg:text-left tracking-tighter leading-none">Voices <br />Unmasked</h3>
             <p className="text-zinc-500 mb-10 leading-relaxed text-xl font-medium text-center lg:text-left">
-              Join a distinguished circle of individuals who have discovered a new standard for adult connections.
+              Step into the circle of individuals who have discovered a new standard for authentic connection.
             </p>
             <div className="flex items-center justify-center lg:justify-start space-x-3 text-rose-600">
               <span className="text-3xl font-black italic tracking-tighter">4.9</span>

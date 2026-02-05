@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
               <span className="text-2xl font-serif font-bold tracking-tighter lowercase italic text-zinc-900">ardour-life</span>
             </div>
             <p className="text-zinc-500 max-w-sm mb-10 text-lg leading-relaxed font-medium">
-              Elevating intimacy through high-fashion design, uncompromising privacy, and elite verification. The premium club for curated digital connections.
+              Elevating intimacy through high-fashion design, uncompromising privacy, and authentic verification. The premier sanctuary for curated digital connections.
             </p>
             <div className="flex space-x-8">
               <a href="#" className="text-zinc-300 hover:text-rose-600 transition-colors">
@@ -31,8 +31,8 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-zinc-900 font-black mb-10 uppercase tracking-[0.2em] text-[11px]">Experience</h4>
             <ul className="space-y-6 text-zinc-400 text-xs font-bold tracking-widest uppercase">
-              <li><a href="#" className="hover:text-rose-600 transition-colors">Live Studios</a></li>
-              <li><a href="#" className="hover:text-rose-600 transition-colors">Private Search</a></li>
+              <li><a href="#" className="hover:text-rose-600 transition-colors">Private Viewing</a></li>
+              <li><a href="#" className="hover:text-rose-600 transition-colors">Discrete Search</a></li>
               <li><a href="#" className="hover:text-rose-600 transition-colors">Elite Tiers</a></li>
               <li><a href="#" className="hover:text-rose-600 transition-colors">Compliance</a></li>
             </ul>
