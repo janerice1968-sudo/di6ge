@@ -7,7 +7,7 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import AgeVerification from './components/AgeVerification';
 
-export const GLOBAL_LINK = "https://t.acrsmartcam.com/404142/7335?bo=2779,2778,2777,2776,2775&aff_sub5=SF_006OG000004lmDN";
+export const GLOBAL_LINK = "https://t.acrsmartcam.com/404142/7083?bo=2779,2778,2777,2776,2775&aff_sub5=SF_006OG000004lmDN";
 
 const App: React.FC = () => {
   const [isVerified, setIsVerified] = useState<boolean>(false);
