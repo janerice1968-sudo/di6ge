@@ -1,4 +1,6 @@
-
+ <a class="btn" id="enterBtn" href="#">
+    Continue ▶
+  </a>
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
